@@ -42,6 +42,7 @@ class IjTracker extends StatelessWidget {
           ),
         ),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
