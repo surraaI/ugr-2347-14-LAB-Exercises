@@ -54,8 +54,8 @@ class IjTracker extends StatelessWidget {
                         child: Image.asset(
                           'assets/my_sheep.jpg', 
                           fit: BoxFit.cover,
-                          width: 100,
-                          height: 100,
+                          width: 70,
+                          height: 70,
                         ),
                       ),
                       const SizedBox(width: 8.0),
@@ -94,6 +94,7 @@ class IjTracker extends StatelessWidget {
               ),
             ),
             Container(
+              height: 50,
               color: Colors.blue,
               child: const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
