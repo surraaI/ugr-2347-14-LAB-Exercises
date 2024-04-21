@@ -46,7 +46,7 @@ class _PostsScreenState extends State<PostsScreen> {
 
   Future<void> refreshPosts() async {
     setState(() {
-      posts = []; // Clear the existing posts list
+      posts = []; 
     });
     await fetchPosts();
   }

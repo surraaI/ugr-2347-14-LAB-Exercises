@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-// Event class
+
 abstract class CounterEvent {}
 
 class Increment extends CounterEvent {}
 
 class Decrement extends CounterEvent {}
 
-// State class
+
 class CounterState {
   final int count;
 
   CounterState({required this.count});
 }
 
-// Bloc class
+
 class CounterBloc extends Bloc<CounterEvent, CounterState> {
   CounterBloc() : super(CounterState(count: 0)) {
     on<Increment>((event, emit) => emit(CounterState(count: state.count + 1)));
