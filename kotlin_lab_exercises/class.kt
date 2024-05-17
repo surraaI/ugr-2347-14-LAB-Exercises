@@ -12,6 +12,7 @@ class Rectangle(var length: Double, var width: Double) {
 
 
 class Triangle(var side1: Double, var side2: Double, var side3: Double) {
+    
     fun isEquilateral(): Boolean {
         return side1 == side2 && side2 == side3
     }
@@ -56,7 +57,7 @@ fun main() {
     println("Is the first triangle equilateral? ${myTriangle1.isEquilateral()}")
     println("Is the second triangle isosceles? ${myTriangle2.isIsosceles()}")
     println("Is the third triangle scalene? ${myTriangle3.isScalene()}")
-    
+
     val cart = ShoppingCart()
     cart.addItem("Apple", 0.5)
     cart.addItem("Banana", 0.25)
